@@ -23,4 +23,10 @@ class(myTrapezoid)
 mySimpson <- new("Simp", xStart=3, yStart=8, xEnd=10, yEnd=23)
 class(mySimpson)
 
-
+#I struggled a lot with this midterm, specifically as it pertains to whether or not 
+#my class definitions were correct and how to properly write the integrateIt method. 
+#That method was key to a lot of the rest of the midterm, including properly plotting 
+#the graphs and the print method as well. I will be emailing Professor Montgomery to 
+#set up a time to learn how to write that specific method and learn more about setting 
+#up S4 code with apply (which I believe was needed in order to properly write the code 
+#for Simpson’s Rule and the Trapezoidal Rule. 
