@@ -6,3 +6,64 @@ setGeneric(name="integrateIt",
            def=function(xStart, xEnd, yStart, yEnd)
            {standardGeneric("integrateIt")}
 )
+
+setMethod("initialize", "Trap", 
+          function(.Object, xStart, yStart, xEnd, yEnd){
+            .Object@xStart <- xStart
+            .Object@yStart <- yStart
+            .Object@xEnd <- xEnd
+            .Object@yEnd <- yEnd
+            ##I used the four lines of code above to ensure that
+            ##each of these would be recognized when I 
+            ##create the package later. 
+            value=callNextMethod()
+            return(value)
+          }
+) 
+
+setMethod("initialize", "Simp",
+          function(.Object, xStart, yStart, xEnd, yEnd){
+            .Object@xStart <- xStart
+            .Object@yStart <- yStart
+            .Object@xEnd <- xEnd
+            .Object@yEnd <- yEnd
+            ##I used the four lines of code above to ensure that
+            ##each of these would be recognized when I 
+            ##create the package later. 
+            value=callNextMethod()
+            return(value)
+          }
+) 
+
+setMethod(f="integrateIt", "ANY",
+          definition=function(xStart, xEnd, yStart, yEnd){
+            n <- (xEnd-xStart)+1 
+            ##Here, n represents the subdivided partitions between
+            ##the two given x coordinates. I added 1 because n will
+            ##include
+            
+            h <- (xEnd-xStart)/(n) 
+            ##here, m is serving as my
+            trap_rule <- .5*()
+            simp_rule <- 
+            
+            return(
+            )
+            )
+          }
+)
+
+setMethod(f="print", "Trap",
+          definition=function(x){
+              return(print("TRAP INTEGRATED VALUE"))
+            }
+)
+
+setMethod(f="print", "Simp",
+          definition=function(x){
+              return(print("SIMP INTEGRATED VALUE"))
+          }
+)
+
+setMethod(f="plot", )
+
