@@ -1,0 +1,9 @@
+Package: integrateIt
+Type: Package
+Title: This package computes the area under a given curve using the Trapezoidal rule or Simpson's Rule
+Version: 1.0
+Date: 2016-03-23
+Author: Jacob Metz
+Maintainer: Who to complain to <jacob.metz@wustl.edu>
+Description: Specifically, this package is supposed to take a vector of values the user gives it and, by taking in the starting and ending values, successfully calculate the area under the curve using the Trapezoidal Rule or Simpson's Rule.
+License: What license is it under?
