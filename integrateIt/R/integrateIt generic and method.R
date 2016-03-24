@@ -1,10 +1,12 @@
 ##Here I am setting up the integrateIt generic. It will allow me to say that a 
 ##generic function known as "integrateIt" now exists and set me up to create methods. 
+#' @export
 setGeneric(name="integrateIt",
            def=function(xStart, xEnd, yStart, yEnd)
            {standardGeneric("integrateIt")}
 )
 
+#'@export
 setMethod(f="integrateIt", "ANY",
           definition=function(x, y, a, b, rule){
             n <- (xEnd-xStart)+1 
