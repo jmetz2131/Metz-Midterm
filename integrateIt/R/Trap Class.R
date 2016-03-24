@@ -21,7 +21,4 @@ setClass(Class="Trap",
 ##this rule. (xStart, yStart) corresponds to point a as shown in the Blackboard presentation and (xEnd, yEnd) corresponds
 ##to point b as shown in the Blackboard presentation.
 
-##Testing whether I can set up an object that will fall under the class definition for Trap. myTrapezoid works
-##given how I chose to define the Trap class.
-myTrapezoid <- new("Trap", xStart=3, xEnd=5, yStart=4, yEnd=9)
-class(myTrapezoid)
+

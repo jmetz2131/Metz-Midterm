@@ -1,7 +1,7 @@
 ##Setting up the integrateIt generic and the methods for both the Trap and Simp class
 
-##Here I am setting up the integrateIt generic. It will allow me to say that a generic function known as "integrateIt"
-##now exists and set me up to create methods. 
+##Here I am setting up the integrateIt generic. It will allow me to say that a 
+##generic function known as "integrateIt" now exists and set me up to create methods. 
 setGeneric(name="integrateIt",
            def=function(xStart, xEnd, yStart, yEnd)
            {standardGeneric("integrateIt")}
@@ -36,15 +36,18 @@ setMethod("initialize", "Simp",
 ) 
 
 setMethod(f="integrateIt", "ANY",
-          definition=function(xStart, xEnd, yStart, yEnd){
+          definition=function(x, y, a, b, rule){
             n <- (xEnd-xStart)+1 
             ##Here, n represents the subdivided partitions between
             ##the two given x coordinates. I added 1 because n will
-            ##include
+            ##include both the starting and ending values. So for example,
+            ##if the starting value was 4 and the ending value was 10,
+            ##n would be 7 instead of 6. I understand that n can be divided
+            ##in numerous ways, but I chose this one for the function.
             
             h <- (xEnd-xStart)/(n) 
-            ##here, m is serving as my
-            trap_rule <- .5*()
+            ##here, h will multiply the 
+            trap_rule <- 
             simp_rule <- 
             
             return(
@@ -65,5 +68,10 @@ setMethod(f="print", "Simp",
           }
 )
 
-setMethod(f="plot", )
+setMethod(f="plot", "Trap",
+          
+          )
 
+setMethod(f="plot", "Simp",
+          
+          )
