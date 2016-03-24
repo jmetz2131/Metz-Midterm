@@ -10,5 +10,5 @@ setwd("/Users/jacobmetz/Desktop/New Class/Metz-Midterm")
 
 package.skeleton(name = "integrateIt")
 
-current.code <- as.package("primaryrace")
+current.code <- as.package("integrateIt")
 load_all(current.code)
