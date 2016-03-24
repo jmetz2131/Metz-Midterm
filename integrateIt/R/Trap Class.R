@@ -1,6 +1,20 @@
-###First Steps: Here I am setting up the basic class definitions for the Trapezoidal Rule and Simpson's Rule. I will do
-###this before setting up the integrateIt package itself and creating the different methods needed.
-##I have decided to call the Trapezoidal Rule "Trap" and Simpson's Rule "Simp".
+#' What is Encompassed in the Trapezoidal Rule
+#' An object of the class `Trap' has the following slots:
+#' \itemize{
+#' \item \code{xStart} The x coordinate of the point the user chooses to start at.
+#' \item \code{yStart} The y coordinate of the point the user chooses to start at.
+#' \item \code{xEnd} The x coordinate of the point the user chooses to end at.
+#' \item \code{yEnd} The x coordinate of the point the user chooses to end at.
+#' }
+#'
+#' @author Jacob Metz: \email{jacob.metz@@wustl.edu}
+#' @aliases trap-class initialize
+#' @rdname Trap Class
+#' @export
+## The above code shows that I am the author of this specific package, shows what the alias is for this package
+## so it is easily searchable in help files, and also shows what the title of the help file will be with the
+## @rdname command.
+
 setClass(Class="Trap",
          representation = representation(
            xStart = "numeric", 
